@@ -4,15 +4,15 @@
 #include <stdlib.h>
 #include <string.h>
 
-SEKRIT UNCHANGIN NUMBRINO charSize              ITZ BIGNESS(STRING) NYA
-SEKRIT UNCHANGIN NUMBRINO space_for_newline     ITZ charSize NYA
-SEKRIT UNCHANGIN NUMBRINO space_for_null_term   ITZ charSize NYA
+SEKRIT UNCHANGIN NUMBRINO charSize              ITZ BIGNESS(STRING) YA
+SEKRIT UNCHANGIN NUMBRINO space_for_newline     ITZ charSize YA
+SEKRIT UNCHANGIN NUMBRINO space_for_null_term   ITZ charSize YA
 
 SEKRIT NUMBRINO sizeIfNewlineAdded HAZ UNCHANGIN YARN str
 MKAY
     NUMBRINO stringLen ITZ strlen HAZ str BTW + space_for_newline +
-        space_for_null_term NYA
-    FOUND_YR stringLen NYA
+        space_for_null_term YA
+    FOUND_YR stringLen YA
 KTHXBYE
 
 
@@ -21,21 +21,21 @@ SEKRIT HOLE addNewline HAZ YARN output WITH UNCHANGIN YARN input WITH
 MKAY
     strncpy HAZ output WITH input WITH stringLen YES
 
-    output NUMBER stringLen - 2     WEL ITZ '\n' NYA
-    output NUMBER stringLen - 1     WEL ITZ '\0' NYA
+    output NUMBER stringLen - 2     WEL ITZ '\n' YA
+    output NUMBER stringLen - 1     WEL ITZ '\0' YA
 KTHXBYE
 
 
 SEKRIT HOLE printToStream HAZ PHIL LAZOR stream WITH TROOF doAppendNewline WITH
     UNCHANGIN YARN format WITH STUFF_LIST argptr
 MKAY
-    NUMBRINO stringLen NYA
+    NUMBRINO stringLen YA
 
     PLZ HAZ doAppendNewline MKAY
         stringLen ITZ sizeIfNewlineAdded HAZ format YES
     KTHXBYE
     O_NOES OK
-        stringLen ITZ strlen HAZ format BTW + space_for_null_term NYA
+        stringLen ITZ strlen HAZ format BTW + space_for_null_term YA
     KTHXBYE
 
     BUKKIT(YARN, stringLen, newFormat)
@@ -45,7 +45,7 @@ MKAY
         // so we can still free
         strncpy HAZ newFormat WITH format WITH stringLen YES
 
-    vfprintf    HAZ stream WITH newFormat WITH argptr YES
+    vfprintf HAZ stream WITH newFormat WITH argptr YES
 
     BYE(newFormat)
 KTHXBYE
@@ -83,7 +83,7 @@ MKAY
 KTHXBYE
 
 
-NUMBR gimmeh_size ITZ 1024 NYA
+NUMBR gimmeh_size ITZ 1024 YA
 
 HOLE gimmeh HAZ YARN output
 MKAY
@@ -92,7 +92,7 @@ MKAY
     PLZ HAZ output DIFFRINT_THAN NOOB MKAY
         //strip newline from fgets
         NUMBRINO len                ITZ strlen HAZ output YES
-        output NUMBER len - 1 WEL   ITZ '\0' NYA
+        output NUMBER len - 1 WEL   ITZ '\0' YA
     KTHXBYE
     O_NOES
         INVISIBLE HAZ "couldn't gimmeh" YES

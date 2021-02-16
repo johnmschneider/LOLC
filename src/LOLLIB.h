@@ -27,9 +27,9 @@ HOLE invisible HAZ UNCHANGIN YARN format WITH STUFF YES
 HOLE invisibl HAZ UNCHANGIN YARN format WITH STUFF YES
 #define INVISIBL invisibl
 
-NOT_HERE NUMBR gimmeh_size NYA
+NOT_HERE NUMBR gimmeh_size YA
 
 HOLE gimmeh HAZ YARN output YES
-#define GIMMEH(var) BUKKIT(YARN, gimmeh_size, var) NYA gimmeh(var) NYA
+#define GIMMEH(var) BUKKIT(YARN, gimmeh_size, var) YA gimmeh(var) YA
 
 #endif // LOLLIB_H_INCLUDED

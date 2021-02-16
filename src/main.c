@@ -1,16 +1,3 @@
-# LOLC
- A sort of "port" of the LOLCODE language to C using macros. Don't do this in production code.
-
- This also by no means represents code that I consider production quality. It's just for fun!
-
-## Using LOLC
-### Installation 
- Since the entire project is only 3 files long I figured it would be more hastle to compile it to a DLL and try to link it. It's all valid standards-compliant C as far as I know, but there's a *lot* of macros.
-
- To use the library simply copy the 3 files in this repository's "src" folder to your project and then `#include "LOLCODE.h"`
-
- *Example program*
- ```c
 #include "LOLCODE.h"
 
 HAI
@@ -27,6 +14,7 @@ HAI
         FOUND_YR 1 YA
     KTHXBYE
 
+    BOOP
     VISIBLE HAZ "entering test loop (q + enter to exit)" YES
 
     STRING firstChar YA
@@ -55,4 +43,3 @@ HAI
 
     FOUND_YR 0 YA
 KTHXBYE
- ```

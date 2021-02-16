@@ -3,7 +3,7 @@
     #define OK {
     #define KTHXBYE }
     #define WITH ,      // for use with function list
-    #define NYA ;
+    #define YA ;
     #define HAZ (
     #define BTW )
     #define K HAZ HOLE BTW
@@ -11,7 +11,7 @@
     #define UP ++
     #define DOWN --
     #define ITZ =
-    #define YES BTW NYA
+    #define YES BTW YA
     #define NOT_HERE extern
     #define NUMBER [
     #define WEL ]       // lolcats for well
@@ -22,15 +22,15 @@
     #define IN_YR_LOOP for
     #define WIL while
     #define DID do
-    #define GO_AWAY break NYA
-    #define SAME_THING continue NYA
+    #define GO_AWAY break YA
+    #define SAME_THING continue YA
 
     #include <stdarg.h>
     #define STUFF ...
     #define STUFF_LIST va_list
-    #define STUFF_START(nameOfLastParam) va_list argptr NYA \
-        va_start(argptr, nameOfLastParam) NYA
-    #define STUFF_END va_end(argptr) NYA
+    #define STUFF_START(nameOfLastParam) va_list argptr YA \
+        va_start(argptr, nameOfLastParam) YA
+    #define STUFF_END va_end(argptr) YA
 
     #define BIG long
     #define TINY short
@@ -45,7 +45,7 @@
     #define BIG_NUMBAR double;
     #define HOLE void
     #define OTHER_THING void
-    #define BOX THING LAZOR
+    #define BOX OTHER_THING LAZOR
     #define FOUND_YR return
     #define THING struct
     #define STRING char
@@ -80,7 +80,7 @@
     #define BUKKIT(type, elementLength, var) type var ITZ \
         ((type) malloc(sizeof(type) * elementLength));
     #define PHIL FILE
-    #define BYE(var) free(var) NYA
+    #define BYE(var) free(var) YA
 
     #include "LOLLIB.h"
 #endif // LOLCODE_H_INCLUDED
