@@ -9,6 +9,7 @@
     #define K HAZ HOLE BTW
     #define MKAY BTW OK
     #define UP ++
+    #define DOWN --
     #define ITZ =
     #define YES BTW NYA
     #define NOT_HERE extern
@@ -43,7 +44,7 @@
     #define NUMBAR float
     #define BIG_NUMBAR double;
     #define HOLE void
-    #define THING void
+    #define OTHER_THING void
     #define BOX THING LAZOR
     #define FOUND_YR return
     #define THING struct
