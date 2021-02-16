@@ -43,6 +43,8 @@
     #define NUMBAR float
     #define BIG_NUMBAR double;
     #define HOLE void
+    #define THING void
+    #define BOX THING LAZOR
     #define FOUND_YR return
     #define THING struct
     #define STRING char
@@ -70,12 +72,14 @@
 
     #define HAI NUMBR main HAZ NUMBR argc WITH STRING LAZOR LAZOR argv MKAY
 
+    #define BOOP VISBL HAZ "%c" WITH 0x7 YES // bell character
+
     #define MAEK(var, type) ((type) var)
     #define KOOL_VAR(type, var) type var ITZ ((type) malloc(sizeof(type)));
     #define BUKKIT(type, elementLength, var) type var ITZ \
         ((type) malloc(sizeof(type) * elementLength));
     #define PHIL FILE
-    #define BYE(var) free(var)
+    #define BYE(var) free(var) NYA
 
     #include "LOLLIB.h"
 #endif // LOLCODE_H_INCLUDED

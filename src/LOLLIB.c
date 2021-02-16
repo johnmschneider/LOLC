@@ -42,9 +42,12 @@ MKAY
     PLZ HAZ doAppendNewline BTW
         addNewline  HAZ newFormat WITH format WITH stringLen YES
     O_NOES
-        newFormat ITZ format NYA
+        // so we can still free
+        strncpy HAZ newFormat WITH format WITH stringLen YES
 
     vfprintf    HAZ stream WITH newFormat WITH argptr YES
+
+    BYE(newFormat)
 KTHXBYE
 
 
